@@ -1,0 +1,70 @@
+body{padding:30px;
+    margin: 30px;
+    background:radial-gradient(circle,rgb(227, 240, 77),rgb(72, 125, 194));
+    text-align: center;
+}
+#navbar{
+background:radial-gradient(circle, #9c484875,rgb(164, 165, 126));
+margin:5px 10px;
+padding:5px;
+display:flex;
+position:fixed;
+top:0;
+right:0;
+left:0;
+border-radius:20px;
+}
+.nav-ul{display:flex; 
+flex-direction:row; 
+justify-content:flex-end;
+align-items:center;
+text-align:center; 
+padding:5px;
+margin:5px;
+list-style:none;
+width:100vw;
+}
+
+.nav-link{background:rgb(104, 125, 0);
+margin:5px;
+border:2px solid rgb(91, 123, 153); 
+font-size:20px;
+color:white;
+text-decoration:none;
+padding:10px 10px;
+width:100%;
+font-weight:bold;
+border-radius:10px; 
+}
+#name{
+    border-radius: 10px;
+    background-color: aliceblue;
+    text-shadow: 0 0 10px  blue;
+}
+
+#foto{
+  border:10px,solid,black;  
+  border-radius:30px;
+}
+#about{
+background-color: rgba(240, 248, 255, 0.452);
+border-radius:30px;
+
+}
+#contact{
+background-color: rgba(240, 248, 255, 0.452);
+border-radius:30px;
+}
+#contact:hover{scale: 1.1;
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0.566);
+    color: #ffffff;
+border-radius:30px;
+}
+h1,h2{background-color: rgba(0, 0, 0, 0.592);
+    text-shadow: 0 0 10px #ffffff;
+    border-radius:50px;
+}
+.fact{
+    list-style: none;
+}
