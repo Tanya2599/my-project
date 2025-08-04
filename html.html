@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <body>
+<nav id="navbar">
+    <h2 id="name">Navigation</h2>
+    <ul class="nav-ul">
+        <li><a class="nav-link" href="#info">Info</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+    </ul>
+</nav>
+<div id="info">
+    <h1>Мій Хомʼяк</h1>
+    <img id="foto" src="https://cs14.pikabu.ru/post_img/big/2022/07/18/9/1658152860181382381.png" alt="фотка хомʼяка">
+
+    <p>Мій Хомʼяк дуже красивий.Він дикий і розкішний.На цій сторінці ти дізнаєшся все про нього!</p>
+</div>
+<div id="about">
+    <h2>Цікаві факти про мого хомʼяка</h2>
+<ul class="fact">
+        <li>У нього красиві лапки</li>
+        <li>У нього блискуча шерсть</li>
+        <li>У нього гострі зубки</li>
+        <li>У нього красиві очі</li>
+        <li>Він дуже милий</li>
+        <li>Він не люить поганих людей</li>
+    </ul>
+<h2>Друзі мого хомʼяка</h2>
+<ul class="fact">
+        <li>Миша</li>
+        <li>Вовк</li>
+        <li>Зайчик</li>
+        <li>Скунс</li>
+    </ul>
+    <h2>Що любить їсти мій Хомʼяк</h2>
+<ul class="fact">
+        <li>Травичку</li>
+        <li>Горішки</li>
+        <li>Ягоди</li>
+    </ul>
+</div>
+<div id="contact">
+<h2>Контакти мого хомʼяка</h2>
+<p>Мобільний телефон <strong>0664664818</strong></p>
+<p>Фейсбук сторінка  <strong>Хомка</strong></p>
+</div>
+<div id="zapys">
+    <h1>Записатись на прийом до мого хомʼяка</h1>
+     <select id="options">
+    <option value="">-- Оберіть причину запису --</option>
+    <option value="one">Проблеми вдома чи на роботі</option>
+    <option value="two">Проблеми з алкоголем</option>
+    <option value="three">Порада від мого хомʼяка</option>
+    <option value="other">Інше</option>
+  </select>
+    <br><br>
+    <input type="text" id="name1" placeholder="Ваше ім*я"></input><br><br>
+    <input type="text" id="email" placeholder="Ваш емейл"></input><br><br>
+<button id="submit">Записатись</button>
+</div>
+<div id="message" class="msg"></div>
+<script>
+  const btn = document.getElementById("submit");
+  const message = document.getElementById("message");
+
+  btn.onclick = function() {
+    message.textContent = "Дякуємо! Мій хомяк розгляне Ваш запит і звяжеться з Вами!";
+    message.style.display = "block";
+
+    // Прибрати сповіщення через 3 секунди
+    setTimeout(() => {
+      message.style.display = "none";
+    }, 5000);
+  }
+</script>
+
+
+    </body>
+    </html>
